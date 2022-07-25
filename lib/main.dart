@@ -25,6 +25,8 @@ class MyHomepage extends StatefulWidget {
 }
 
 class _MyHomepageState extends State<MyHomepage> {
+  int number = 0; //สร้าง state
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,11 +37,17 @@ class _MyHomepageState extends State<MyHomepage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("สวัสดีครับ"),
-            Text("Hello dart"),
-            Text("Petch"),
+            Text("กดปุ่มเพื่อเพื่มจำนวนตัวเลข"),
+            Text(
+              number.toString(),
+              style: TextStyle(fontSize: 60),
+            ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
     );
   }
