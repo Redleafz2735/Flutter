@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
           title: Text("Hello flutter kub"),
         ),
         body: Center(
-          child: Text("สวัสดีครับ"),
+          child: Text(
+            "สวัสดีครับ",
+            style: TextStyle(fontSize: 30, color: Colors.red),
+          ),
         ),
       ),
       theme: ThemeData(primarySwatch: Colors.lightGreen),
