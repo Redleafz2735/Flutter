@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
           title: Text("Hello flutter kub"),
         ),
         body: Center(
-          child: Text(
-            "สวัสดีครับ",
-            style: TextStyle(fontSize: 30, color: Colors.red),
+          child: Image(
+            image: NetworkImage(
+                "https://cdn.pixabay.com/photo/2022/04/28/04/07/snake-7161713__340.jpg"),
           ),
         ),
       ),
