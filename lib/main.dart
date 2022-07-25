@@ -16,9 +16,13 @@ class MyApp extends StatelessWidget {
           title: Text("Hello flutter kub"),
         ),
         body: Center(
-          child: Image(
-            image: NetworkImage(
-                "https://cdn.pixabay.com/photo/2022/04/28/04/07/snake-7161713__340.jpg"),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("สวัสดีครับ"),
+              Text("Hello dart"),
+              Text("Petch"),
+            ],
           ),
         ),
       ),
