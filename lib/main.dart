@@ -11,22 +11,36 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "My App",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hello flutter kub"),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("สวัสดีครับ"),
-              Text("Hello dart"),
-              Text("Petch"),
-            ],
-          ),
+      home: MyHomepage(),
+      theme: ThemeData(primarySwatch: Colors.lightGreen),
+    );
+  }
+}
+
+class MyHomepage extends StatefulWidget {
+  const MyHomepage({Key? key}) : super(key: key);
+
+  @override
+  State<MyHomepage> createState() => _MyHomepageState();
+}
+
+class _MyHomepageState extends State<MyHomepage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Hello flutter kub"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("สวัสดีครับ"),
+            Text("Hello dart"),
+            Text("Petch"),
+          ],
         ),
       ),
-      theme: ThemeData(primarySwatch: Colors.lightGreen),
     );
   }
 }
