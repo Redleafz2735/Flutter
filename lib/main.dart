@@ -9,6 +9,7 @@ void main() {
       ),
       body: Text("สวัสดีครับ"),
     ),
+    theme: ThemeData(primarySwatch: Colors.lightGreen),
   );
   runApp(app);
 }
